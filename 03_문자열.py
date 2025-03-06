@@ -89,17 +89,19 @@ print(txt01.format(3,'gggg'))
 txt02 = "I eat {:<20} apples {}"
 print(txt02.format(3,text03))
 #가운데 정렬
-txt03 = "I eat {0:^10} apples {}"
+txt03 = "I eat {:^10} apples {}"
 print(txt03.format(3,text03))
 #소수점 표현
-txt04 = "I eat {:0.2f} apples {}"
+txt04 = "I eat {:.2f} apples {}"
 print(txt04.format(3,text03))
 # 콤마
-txt05 = "I eat {:,.2f} apples {}"
-print(txt05.format(3,text03))
+txt05 = "I eat {:,} apples {}"
+print(txt05.format(3000000,text03))
 
-
+# f '문자열' => 더 간단한 방법
 name = "홍길동"
 age = 24
 txt07 = f'나의 이름은 {name:20}입니다. 나이는 {age:.2f}입니다.'
 print(txt07)
+# :20 에서 숫자 = 오른쪽 정렬, 문자 = 왼쪽 정렬
+
