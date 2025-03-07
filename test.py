@@ -43,33 +43,32 @@ while menu != '5':
         list_num = input('수정할 명함의 번호 입력 >')
         number = int(input('수정할 부분 번호 입력 >'))
         if number == 1 :
-            card_list[list_num-1][0] = input('수정할 이름 입력>')
+            card_list[int(list_num)-1][0] = input('수정할 이름 입력>')
         if number == 2 :
-            card_list[list_num-1][1] = input('수정할 이메일 주소 입력 >')
+            card_list[int(list_num)-1][1] = input('수정할 이메일 주소 입력 >')
         if number == 3 :
-            card_list[list_num-1][2] = input('수정할 전화번호 입력 >')
+            card_list[int(list_num)-1][2] = input('수정할 전화번호 입력 >')
         if number == 4 :
-            card_list[list_num-1][3] = input('수정할 직장 또는 학교 입력 >')
+            card_list[int(list_num)-1][3] = input('수정할 직장 또는 학교 입력 >')
         
-        print("명함이 수정되었습니다", card_list[list_num-1])
+        print("명함이 수정되었습니다", card_list[int(list_num)-1])
 
     elif menu == 3 :
-        print(card_display)
+        print(card_display2)
         list_num = input('삭제할 명함의 번호 입력 >')
-        number = int(input('수정할 부분 번호 입력 >'))
+        number = int(input('삭제할 부분 번호 입력 >'))
         if number == 1 :
-            del card_list[list_num-1][0]
+            del card_list[int(list_num)-1][0]
         if number == 2 :
-            del ard_list[list_num-1][0]
+            del ard_list[int(list_num)-1][1]
         if number == 3 :
-            del ard_list[list_num-1][0]
+            del ard_list[int(list_num)-1][2]
         if number == 4 :
-            del ard_list[list_num-1][0]
+            del ard_list[int(list_num)-1][3]
         if number == 5 :
-            del card_list[list_num-1]
+            del card_list[int(list_num)-1]
         
         print("명함이 삭제되었습니다", card_list)
-
     elif menu == 4 :
         print(card_list)
 
