@@ -1,7 +1,5 @@
 a = [1,2,3,['abcd','b','c',[1,3,7]]]
 
-print(a, '\n',a[0],'\n', a[1],'\n', a[2])
-
 print(a[3][2])
 
 print(a[3][3][1:])
@@ -82,6 +80,7 @@ print(a)
 a = ['a','b','c','b']
 print(a.remove('b'))
 print(a)
+
 a = ['a','b','c','b']
 print(a.pop(a.index('b')))
 print(a)
