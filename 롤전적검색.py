@@ -2,7 +2,7 @@
 import requests
 import json
 import pandas as pd
-API_KEY = "RGAPI-73dee9ea-2e0b-48ea-88b4-b8b6ebf3ad4e"
+API_KEY = " "
 BASE_URL = "https://asia.api.riotgames.com"
 
 def get_summoner_info(summoner_name):
