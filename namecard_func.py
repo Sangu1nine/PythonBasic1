@@ -1,3 +1,5 @@
+import json
+
 def card_input(card_list) :
     name = input('이름 >>> ')
     tel = input('전화번호 >>> ')
@@ -50,3 +52,12 @@ def card_show(card_list) :
     for card in card_list:
         print(f'{card[0]:10} {card[1]:15} {card[2]:10} {card[3]:10}')
     print('=' * 55)
+
+def card_save(card_list,filename) :
+    with open(filename, 'w',encoding="utf-8") as f :
+        json.dump(card_list, f, indent=4,ensure_ascii=False)
+    
+def card_load(filename) :
+    with open(filename, "r", encoding='utf-8') as f:
+        return json.load(f)
+    # return card_list
